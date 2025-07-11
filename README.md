@@ -36,7 +36,7 @@ Follow the steps below to run both frontend and backend locally:
 
 ### 👉 Step 1: Clone the Repository
 
-git clone https://github.com/your-username/HostelMate.git
+git clone https://github.com/HarshKumar5822/HostelMate-Finding-the-Hostel-.git
 cd HostelMate
 
 ### 👉 Step 2: Run the Frontend
