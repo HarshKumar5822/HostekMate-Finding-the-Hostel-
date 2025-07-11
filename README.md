@@ -1,1 +1,1 @@
-# HostekMate-Finding-the-Hostel-
+# HosteMate-Finding-the-Hostel-
