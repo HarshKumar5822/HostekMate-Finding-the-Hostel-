@@ -1,0 +1,146 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Full-page styling */
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  background-attachment: fixed;
+}
+
+/* Main container */
+.location-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  color: green;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Search box container */
+.search-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search input field */
+.search-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #2b0d54;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+/* Search Button */
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(54, 79, 170);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Table Styling */
+.table-container {
+  width: 80%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: green;
+  color: white;
+  font-size: 18px;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+td {
+  font-size: 16px;
+}
+
+/* No Results Found Message */
+.no-results {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

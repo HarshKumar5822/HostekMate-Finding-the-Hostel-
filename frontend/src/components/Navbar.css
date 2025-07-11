@@ -1,0 +1,29 @@
+.nav-container {
+    background-color: rgba(255, 255, 255, 0.3); /* Light transparent background */
+    padding: 15px 30px;  /* Padding for a better look */
+    border-radius: 12px; /* Smooth rounded corners */
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    width: fit-content; /* Make the box fit its content */
+    margin: 20px auto; /* Center the box */
+    font-size: 1.6rem; /* Bigger text */
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.nav-container nav {
+    display: flex;
+    gap: 30px; /* Increase spacing between links */
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #007f00; /* Dark green color */
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-container a:hover {
+    color: #004d00;
+    transform: scale(1.1); /* Slight zoom on hover */
+}

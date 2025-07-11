@@ -1,0 +1,81 @@
+.welcome-container {
+  font-family: 'Verdana', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(50deg, #3ac9dc, #152bce);
+}
+
+/* Centered white form container */
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+}
+
+/* Removed shadow from text */
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Ensuring specific text is black */
+.text-black {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  color: black !important; /* Ensures the color applies */
+}
+
+/* Button group for spacing */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Button styles */
+button {
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button,
+.login-button {
+  background: linear-gradient(50deg, #326741, #0d9896);
+}
+
+/* Hover effect */
+.register-button:hover,
+.login-button:hover {
+  background: linear-gradient(45deg, #FF5A47, #00A3E0);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Info section */
+.info {
+  margin-top: 20px;
+  font-size: 1em;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.info p {
+  color: black !important; /* Ensures black color */
+}

@@ -1,0 +1,76 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure body and root take full screen */
+body, html {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(50deg, #ffffff, #2575fc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure root container takes full screen */
+#root {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar should be full width */
+.navbar {
+  width: 100%;
+  padding: 15px 0;
+  background: #222;
+  color: white;
+  text-align: center;
+  text-shadow: none; /* Remove text shadow */
+}
+
+/* Common page styling for full height */
+.page-container {
+  width: 100%;
+  height: 100vh; /* Full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(50deg, #ffffff, #2575fc);
+  text-align: center;
+}
+
+/* Common form container */
+.form-container {
+  width: 40%;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Remove text shadow from all text elements */
+h1, h2, h3, h4, h5, h6, p, label, button, .navbar {
+  text-shadow: none;
+}
